@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack serve",
-    "build": "webpack --mode production"
+    "serve": "webpack serve --open /task_1/ --mode development",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/spvvrv/task_1.git"
+    "url": "git+<https://github.com/spvvrv/task_1.git>"
   },
   "author": "Sofya Pivovarova",
   "license": "ISC",
@@ -23,10 +25,15 @@
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
+    "gh-pages": "^6.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "image-minimizer-webpack-plugin": "^3.8.3",
     "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.3",
     "postcss-preset-env": "^9.1.4",

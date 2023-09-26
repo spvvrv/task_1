@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 
 module.exports = {
@@ -14,9 +15,9 @@ module.exports = {
     filename: 'bundle.js',
     assetModuleFilename: path.join('images', '[name][ext]'),
     clean: true,
+    publicPath: '/task_1/'
   },
-    devServer: {
-      open: true,
+  devServer: {
       port: 8000,
       hot: true,
   },
@@ -33,6 +34,19 @@ module.exports = {
   optimization: {
     minimizer: [
       new CssMinimizerPlugin(),
+      new ImageMinimizerPlugin({
+      minimizer: {
+        implementation: ImageMinimizerPlugin.imageminMinify,
+        options: {
+          plugins: [
+            ['gifsicle', { interlaced: true }],
+            ['jpegtran', { progressive: true }],
+            ['optipng', { optimizationLevel: 5 }],
+            ['svgo', { name: 'preset-default' }],
+          ],
+        },
+      },
+    }),
     ],
   },
   module: {
