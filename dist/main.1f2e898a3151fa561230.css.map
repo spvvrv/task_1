@@ -1,1 +1,0 @@
-{"version":3,"file":"main.1f2e898a3151fa561230.css","mappings":";;;AAGA;EACE,eAJU;EAKV,oBAJW;AAEb,C","sources":["webpack://task__1/./src/style.scss"],"sourcesContent":["$font-size: 1rem;\n$font-color: lch(28 99 35);\n\nhtml {\n  font-size: $font-size;\n  color: $font-color;\n}\n"],"names":[],"sourceRoot":""}

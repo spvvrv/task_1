@@ -4,16 +4,18 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: "development",
+
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     //__dirname - корень папки
     filename: 'bundle.js',
     assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+    clean: true,
   },
     devServer: {
       open: true,
-      port: 'auto',
+      port: 3000,
       hot: true,
   },
   plugins: [
@@ -23,7 +25,7 @@ module.exports = {
       }
     ),
     new MiniCssExtractPlugin({
-    filename: '[name].[contenthash].css',
+    filename: '[name].css',
     }),
   ],
   module: {
@@ -70,7 +72,7 @@ module.exports = {
     }
     ],
   },
-  devtool: "source-map",
+  // devtool: "source-map",
   //хранит информацию об исходниках
   watch: true,
   //будет отслеживать изменение файлов и будет пересобирать проект каждый раз при сохранении
