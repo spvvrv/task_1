@@ -1,21 +1,23 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
 
 module.exports = {
   mode: "development",
-
+    //хранит информацию об исходниках
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     //__dirname - корень папки
     filename: 'bundle.js',
-    assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+    assetModuleFilename: path.join('images', '[name][ext]'),
     clean: true,
   },
     devServer: {
       open: true,
-      port: 3000,
+      port: 8000,
       hot: true,
   },
   plugins: [
@@ -28,6 +30,11 @@ module.exports = {
     filename: '[name].css',
     }),
   ],
+  optimization: {
+    minimizer: [
+      new CssMinimizerPlugin(),
+    ],
+  },
   module: {
     rules: [
       {
@@ -72,8 +79,6 @@ module.exports = {
     }
     ],
   },
-  // devtool: "source-map",
-  //хранит информацию об исходниках
   watch: true,
   //будет отслеживать изменение файлов и будет пересобирать проект каждый раз при сохранении
 };
