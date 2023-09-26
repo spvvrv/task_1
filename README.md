@@ -1,26 +1,10 @@
-## Getting Started
+# Task_1
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Подготовка к работе
 
-## Installation
-
-Start with cloning this repo on your local machine:
-
-```sh
-$ git clone https://github.com/spvvrv/task_1.git
-
-```
-
-## Usage
-
-### Building a distribution version by webpack
-
-```sh
-$ npm run build
-```
-
-### Serving the app
-
-```sh
-$ npm run serve
-```
+1. Установка требуемых пакетов: `npm i`;
+2. Сборка версии разработки, запуск сервера и открытие сайта в браузере: `npm run serve`;
+3. Сборка версии разработки: `npm run dev`;
+4. Сборка итоговой версии: `npm run build`;
+5. Подготовительные действия перед деплоем: `npm run predeploy` (вызывается автоматически во время деплоя, см. п.6);
+6. Деплой проекта на gh-pages: `npm run deploy`.

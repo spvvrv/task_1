@@ -37,7 +37,7 @@ module.exports = function (url, options) {
 /***/ 239:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "icons/Subtract.d382b9e68fc02c08df02.svg";
+module.exports = __webpack_require__.p + "icons/Subtract.svg";
 
 /***/ }),
 
@@ -65,21 +65,21 @@ module.exports = __webpack_require__.p + "images/favicon-32x32.png";
 /***/ 829:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "icons/home.a9194a459cb3bf0abc2a.svg";
+module.exports = __webpack_require__.p + "icons/home.svg";
 
 /***/ }),
 
 /***/ 116:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "icons/location.30855dec7a28822fb1f6.svg";
+module.exports = __webpack_require__.p + "icons/location.svg";
 
 /***/ }),
 
 /***/ 725:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "icons/person.1c544b131ac66fd971d0.svg";
+module.exports = __webpack_require__.p + "icons/person.svg";
 
 /***/ }),
 
