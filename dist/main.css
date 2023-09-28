@@ -251,7 +251,7 @@ section:last-child {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: url(/task_1/images/inter-v12-latin-500.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url(.images/inter-v12-latin-500.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-600 - latin */
 @font-face {
@@ -259,5 +259,5 @@ section:last-child {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url(/task_1/images/inter-v12-latin-600.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url(.images/inter-v12-latin-600.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

@@ -15,7 +15,7 @@ module.exports = {
     filename: 'bundle.js',
     assetModuleFilename: path.join('images', '[name][ext]'),
     clean: true,
-    publicPath: '/task_1/'
+    publicPath: '.'
   },
   devServer: {
       port: 8000,
