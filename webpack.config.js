@@ -72,6 +72,20 @@ module.exports = {
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+          use: [
+    {
+      loader: 'image-webpack-loader',
+      options: {
+        mozjpeg: {
+          progressive: true,
+          quality: 20
+        },
+                webp: {
+          quality: 75
+        }
+      },
+    },
+  ],
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
