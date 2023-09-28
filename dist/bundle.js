@@ -34,56 +34,56 @@ module.exports = function (url, options) {
 
 /***/ }),
 
-/***/ 239:
+/***/ 521:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "icons/Subtract.svg";
 
 /***/ }),
 
-/***/ 829:
+/***/ 88:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "icons/home.svg";
 
 /***/ }),
 
-/***/ 116:
+/***/ 421:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "icons/location.svg";
 
 /***/ }),
 
-/***/ 725:
+/***/ 834:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "icons/person.svg";
 
 /***/ }),
 
-/***/ 742:
+/***/ 978:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "images/apple-touch-icon.png";
 
 /***/ }),
 
-/***/ 147:
+/***/ 573:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "images/favicon-16x16.png";
 
 /***/ }),
 
-/***/ 60:
+/***/ 795:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "images/favicon-32x32.png";
 
 /***/ }),
 
-/***/ 23:
+/***/ 293:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "images/sofya-min.jpg";
@@ -198,15 +198,15 @@ var getUrl_default = /*#__PURE__*/__webpack_require__.n(getUrl);
 ;// CONCATENATED MODULE: ./src/index.html
 // Imports
 
-var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(742), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(60), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(147), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(978), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(795), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(573), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(997), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(829), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(116), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(725), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(239), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(23), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(88), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(421), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(834), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(521), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(293), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = getUrl_default()(___HTML_LOADER_IMPORT_0___);
 var ___HTML_LOADER_REPLACEMENT_1___ = getUrl_default()(___HTML_LOADER_IMPORT_1___);
