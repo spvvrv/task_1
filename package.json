@@ -6,8 +6,9 @@
   "scripts": {
     "serve": "webpack serve --open /task_1/ --mode development",
     "dev": "webpack --mode development",
-    "build": "webpack --config webpack.config.js",
-    "deploy": "npm run build && gh-pages -d dist"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "url": "git+<https://github.com/spvvrv/task_1.git>"

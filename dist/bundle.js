@@ -222,7 +222,7 @@ eval("module.exports = __webpack_require__.p + \"icons/person.svg\";\n\n//# sour
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = ".";
+/******/ 		__webpack_require__.p = "/task_1/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

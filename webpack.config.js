@@ -80,7 +80,7 @@ module.exports = {
           progressive: true,
           quality: 20
         },
-                webp: {
+          webp: {
           quality: 75
         }
       },

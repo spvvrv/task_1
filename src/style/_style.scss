@@ -29,8 +29,10 @@ html {
 }
 
 body {
-  // height: 100vh;
-  background-color: $main-back;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $back;
   color: $text;
   font-family: 'Inter';
   scroll-behavior: smooth;
@@ -93,12 +95,12 @@ li {
 
 .container {
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
   padding: 5rem 10rem;
   max-width: $main-width;
   background-color: $back;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
   @media (max-width: 1579px) {
     flex-direction: column;
     align-content: center;
