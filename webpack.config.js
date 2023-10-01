@@ -17,8 +17,11 @@ module.exports = {
     publicPath: '.',
   },
   devServer: {
-    port: 8000,
-    hot: true,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    compress: true,
+    open: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -116,6 +119,6 @@ module.exports = {
       },
     ],
   },
-  watch: true,
+  // watch: true,
   //будет отслеживать изменение файлов и будет пересобирать проект каждый раз при сохранении
 }
