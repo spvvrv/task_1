@@ -14,7 +14,7 @@ module.exports = {
     filename: 'bundle.js',
     assetModuleFilename: path.join('images', '[name][ext]'),
     clean: true,
-    publicPath: '.',
+    publicPath: './',
   },
   devServer: {
     static: {
@@ -55,7 +55,7 @@ module.exports = {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         type: 'asset/resource',
         generator: {
-          filename: './fonts/[name][ext]'
+          filename: 'fonts/[name][ext]'
         },
       },
       {
