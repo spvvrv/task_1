@@ -5,7 +5,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
+  // mode: 'development',
   //хранит информацию об исходниках
   entry: './src/index.js',
   output: {
@@ -53,15 +53,10 @@ module.exports = {
     rules: [
       {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: './fonts/[name][ext]'
+        },
       },
       {
         test: /\.html$/i,
@@ -98,10 +93,6 @@ module.exports = {
             },
           },
         ],
-      },
-      {
-        test: /\.(woff2?|eot|ttf|otf)$/i,
-        type: 'asset/resource',
       },
       {
         test: /\.svg$/,
