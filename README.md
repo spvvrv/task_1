@@ -8,3 +8,8 @@
 4. Сборка итоговой версии: `npm run build`;
 5. Подготовительные действия перед деплоем: `npm run predeploy` (вызывается автоматически во время деплоя, см. п.6);
 6. Деплой проекта на gh-pages: `npm run deploy`.
+
+## Сборка и запуск docker
+1. docker build -t task_1 -f docker/Dockerfile .
+2. docker-compose -f docker/docker-compose.yml up -d
+
